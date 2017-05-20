@@ -5,3 +5,8 @@ resources:
     pointer:
       sourceName: niranjan92/golang_benchmarks
       branch: master
+  # This time resource posts new versions for it, every 12 hours
+  - name: 12hour-trigger
+    type: time
+    seed:
+      interval: "* */12 * * *"
