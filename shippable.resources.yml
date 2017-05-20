@@ -1,0 +1,7 @@
+resources:
+  - name: golang_bench
+    type: gitRepo
+    integration: githubSub
+    pointer:
+      sourceName: niranjan92/golang_benchmarks
+      branch: master
