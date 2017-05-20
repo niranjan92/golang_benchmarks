@@ -1,0 +1,11 @@
+jobs:
+  - name: benchmark_golang
+    type: runCLI
+    steps:
+      - IN: golang_bench
+      - TASK:
+        - script: ./IN/config_repo/gitRepo/runBenchmark.sh
+    on_success:
+      - script: echo 'on success !!!!!'
+    on_failure:
+      - script: echo 'Failed job .... :('
