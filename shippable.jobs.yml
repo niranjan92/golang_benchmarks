@@ -3,8 +3,9 @@ jobs:
     type: runCLI
     steps:
       - IN: golang_bench
+      - IN: 12hour-trigger
       - TASK:
-        - script: ./IN/config_repo/gitRepo/runBenchmark.sh
+        - script: ./IN/golang_bench/gitRepo/runBenchmark.sh
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
