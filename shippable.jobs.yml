@@ -7,6 +7,6 @@ jobs:
       - TASK:
         - script: ./IN/golang_bench/gitRepo/runBenchmark.sh
     on_success:
-      - script: echo 'on success !!!!!'
+      - script: ./IN/golang_bench/gitRepo/onSuccess.sh
     on_failure:
       - script: echo 'Failed job .... :('
