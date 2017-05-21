@@ -6,4 +6,4 @@ go:
 build:
   ci:
     - echo "starting CI..."
-    - ./IN/golang_bench/gitRepo/runBenchmark.sh
+    - ./runBenchmark.sh
