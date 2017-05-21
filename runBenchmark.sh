@@ -2,6 +2,7 @@ echo "starting benchmarks..."
 
 #to get perf tool
 kernel=$(uname -r)
+apt-get update
 apt-get install linux-tools-common linux-tools-generic linux-tools-$kernel
 
 # bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
