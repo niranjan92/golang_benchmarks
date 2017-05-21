@@ -13,7 +13,7 @@ apt-get install linux-tools-common linux-tools-generic linux-tools-$kernel
 gvm use go1.8
 
 gvm install master
-cat /root/.gvm/logs/go-master-compile.log
+# cat /root/.gvm/logs/go-master-compile.log
 gvm use master
 go version 
 
