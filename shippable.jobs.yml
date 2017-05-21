@@ -10,3 +10,9 @@ jobs:
       - script: ./IN/golang_bench/gitRepo/onSuccess.sh
     on_failure:
       - script: echo 'Failed job .... :('
+
+  - name: golang_benchmarks_runCI
+    type: runCI
+    steps:
+      - IN: 12hour-trigger
+
