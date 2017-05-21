@@ -10,4 +10,5 @@ build:
     pull: true
   ci:
     - echo "starting CI..."
+    - lsb_release -a
     - ./runBenchmark.sh
