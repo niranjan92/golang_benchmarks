@@ -4,8 +4,8 @@ echo "starting benchmarks..."
 kernel=$(uname -r)
 apt-get install linux-tools-common linux-tools-generic linux-tools-$kernel
 
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-source $HOME/.gvm/scripts/gvm
+# bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+# source $HOME/.gvm/scripts/gvm
 
 #Bootstrap go for compilation
 gvm install go1.8.1 -B
