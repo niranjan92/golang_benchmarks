@@ -4,6 +4,10 @@ go:
   - 1.8
   
 build:
+  pre_ci_boot:
+    image_name: drydock/u16golall
+    image_tag: latest
+    pull: true
   ci:
     - echo "starting CI..."
     - ./runBenchmark.sh
