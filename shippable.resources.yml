@@ -9,4 +9,4 @@ resources:
   - name: 12hour-trigger
     type: time
     seed:
-      interval: "* */12 * * *"
+      interval: "0 */12 * * *"
