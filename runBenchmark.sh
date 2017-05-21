@@ -9,8 +9,8 @@ apt-get install linux-tools-common linux-tools-generic linux-tools-$kernel
 # source $HOME/.gvm/scripts/gvm
 
 #Bootstrap go for compilation
-gvm install go1.8.1 -B
-gvm use go1.8.1
+# gvm install go1.8 -B
+gvm use go1.8
 
 gvm install master
 cat /root/.gvm/logs/go-master-compile.log
