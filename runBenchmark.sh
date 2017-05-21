@@ -23,4 +23,4 @@ mkdir $PWD/go_bench_bin
 GOBIN=$PWD/go_bench_bin go get golang.org/x/benchmarks/...
 
 echo "running benchmarks"
-$PWD/go_bench_bin/build -benchnum 5
+$PWD/go_bench_bin/build -benchnum 1
